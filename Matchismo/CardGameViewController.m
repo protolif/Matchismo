@@ -14,10 +14,6 @@
 
 @implementation CardGameViewController
   - (IBAction)flipCard:(UIButton *)sender {
-    if (!sender.isSelected) {
-      sender.selected = YES;
-    } else {
-      sender.selected = NO;
-    }
+    sender.selected = !sender.isSelected;
   }
 @end
