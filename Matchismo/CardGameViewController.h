@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CardGameViewController : UIViewController
-
+  - (IBAction)flipCard:(UIButton *)sender;
 @end
