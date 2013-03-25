@@ -10,6 +10,7 @@
 
 @interface CardGameViewController ()
   // Private properties go here.
+  @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @end
 
 @implementation CardGameViewController
