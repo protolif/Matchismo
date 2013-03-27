@@ -29,7 +29,7 @@
       // insert the Card at the 0 index of self.cards
       [self.cards insertObject:card atIndex:0];
     } else {
-      // appending the Card to the self.cards property
+      // append the Card to self.cards
       [self.cards addObject:card];
     }
   }
