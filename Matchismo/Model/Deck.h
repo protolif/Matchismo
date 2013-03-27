@@ -11,6 +11,8 @@
 
 @interface Deck : NSObject
 
+  // Add a Card to either the top or bottom
+  // of an NSMutableArray of Card objects
   - (void)addCard:(Card *)card atTop:(BOOL)atTop;
   - (Card *)drawRandomCard;
 
