@@ -23,4 +23,15 @@
     return _cards;
   }
 
+  - (void)addCard:(Card *)card atTop:(BOOL)atTop {
+    
+    if (atTop) {// in the case of true,
+      // insert the Card at the 0 index of self.cards
+      [self.cards insertObject:card atIndex:0];
+    } else {
+      // appending the Card to the self.cards property
+      [self.cards addObject:card];
+    }
+  }
+
 @end
