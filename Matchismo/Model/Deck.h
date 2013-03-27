@@ -14,6 +14,9 @@
   // Add a Card to either the top or bottom
   // of an NSMutableArray of Card objects
   - (void)addCard:(Card *)card atTop:(BOOL)atTop;
+
+  // Randomly select a Card from the Deck,
+  // and return a pointer to it.
   - (Card *)drawRandomCard;
 
 @end

@@ -34,4 +34,20 @@
     }
   }
 
+  - (Card *)drawRandomCard {
+    Card *randomCard = nil;
+    
+    if (self.cards.count) {
+      // Select a random number between 0 and
+      // the total number of cards in the deck.
+      unsigned index = arc4random() % self.cards.count;
+      // Create a pointer to a random card in the array.
+      randomCard = self.cards[index];
+      // Take the card out of the deck.
+      [self.cards removeObjectAtIndex:index];
+    }
+    
+    return randomCard;// The card is in your hand now.
+  }
+
 @end
