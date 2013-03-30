@@ -28,6 +28,10 @@
     return validSuits;
   }
 
+  + (NSUInteger)maxRank {
+    return [self rankStrings].count - 1;// should be 13
+  }
+
   @synthesize suit = _suit;
 
   - (void)setSuit:(NSString *)suit {
@@ -39,6 +43,14 @@
 
   - (NSString *)suit {
     return _suit ? _suit : @"?";// handling an unexpected nil value
+  }
+
+  - (void)setRank:(NSUInteger)rank {
+    // Validate rank is less than or equal to maxRank
+    // We don't want to end up with an NSArray out of bounds error
+    if (rank <= [PlayingCard maxRank]) {
+      _rank = rank;
+    }
   }
 
 @end
