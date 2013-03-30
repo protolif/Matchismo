@@ -10,4 +10,13 @@
 
 @implementation PlayingCard
 
+  - (NSString *)contents {
+    return [[PlayingCard rankStrings][self.rank] stringByAppendingString:self.suit];
+  }
+
+  + (NSArray *)rankStrings {
+    static NSArray *rankStrings = nil;
+    // Here, there be dragons.
+    return rankStrings;
+  }
 @end
