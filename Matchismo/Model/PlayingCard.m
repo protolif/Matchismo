@@ -23,7 +23,7 @@
 
   + (NSArray *)validSuits {
     static NSArray *validSuits = nil;
-    // Lazy instantiating an array of special characters
+    // Lazily instantiating an array of special characters
     if (!validSuits) validSuits = @[@"♥", @"♦", @"♠", @"♣"];
     return validSuits;
   }
