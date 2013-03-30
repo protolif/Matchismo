@@ -10,13 +10,21 @@
 
 @implementation PlayingCard
 
-  - (NSString *)contents {
+  - (NSString *)contents {// returns suit + rank
     return [[PlayingCard rankStrings][self.rank] stringByAppendingString:self.suit];
   }
 
   + (NSArray *)rankStrings {
-    static NSArray *rankStrings = nil;
+    static NSArray *rankStrings = nil;// C static is like Ruby constant
     // Here, there be dragons.
     return rankStrings;
   }
+
+  + (NSArray *)validSuits {
+    static NSArray *validSuits = nil;
+    // Lazy instantiating an array of special characters
+    if (!validSuits) validSuits = @[@"♥", @"♦", @"♠", @"♣"];
+    return validSuits;
+  }
+
 @end
