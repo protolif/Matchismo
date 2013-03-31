@@ -12,11 +12,13 @@
 //  with each flip to face up.
 
 #import "CardGameViewController.h"
+#import "PlayingCardDeck.h"
 
 @interface CardGameViewController ()
   // Private properties go here.
   @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
   @property (nonatomic) int flipCount;
+  @property (strong, nonatomic) PlayingCardDeck *deck;
 @end
 
 @implementation CardGameViewController
@@ -29,5 +31,11 @@
   - (void)setFlipCount:(int)flipCount {
     _flipCount = flipCount;
     self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
+  }
+
+  - (PlayingCardDeck *)getDeck {
+    // Lazily instantiating a PlayingCardDeck
+    if (!_deck) _deck = [[PlayingCardDeck alloc] init];
+    return _deck;
   }
 @end
