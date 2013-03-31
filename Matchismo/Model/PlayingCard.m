@@ -37,7 +37,7 @@
   - (void)setSuit:(NSString *)suit {
     // The suit must be valid, matching one of the validSuits.
     if ([[PlayingCard validSuits] containsObject:suit]) {
-      suit = _suit;
+      _suit = suit;
     }
   }
 
