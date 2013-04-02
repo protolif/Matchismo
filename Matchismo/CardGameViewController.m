@@ -25,12 +25,6 @@
 @implementation CardGameViewController
 
   - (IBAction)flipCard:(UIButton *)sender {
-    //  if (!sender.selected) { // AKA face down
-    //    // Draw a new card
-    //    Card *card = [self.deck drawRandomCard];
-    //    // Set the button's contents, for the selected state.
-    //    [sender setTitle:card.contents forState:UIControlStateSelected];
-    //  }
     // Flip the card over
     sender.selected = !sender.isSelected;
     self.flipCount++;
@@ -45,5 +39,15 @@
     // Lazily instantiating a PlayingCardDeck
     if (!_deck) _deck = [[PlayingCardDeck alloc] init];
     return _deck;
+  }
+
+  - (void)setCardButtons:(NSArray *)cardButtons {
+    _cardButtons = cardButtons;// Assigning the instance variable
+    for (UIButton *cardButton in cardButtons) {
+      // Draw a new card
+      Card *card = [self.deck drawRandomCard];
+      // Set the button's contents, for the selected state.
+      [cardButton setTitle:card.contents forState:UIControlStateSelected];
+    }
   }
 @end
