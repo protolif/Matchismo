@@ -12,6 +12,7 @@
 @interface CardMatchingGame : NSObject
   // To start the game, we must have a deck.
   // A deck must contain a certain number of cards.
+  // Thus, our designated initializer:
   - (id)initWithCardCount:(NSUInteger)cardCount
                 usingDeck:(Deck *)deck;
   // Flip a specific card over, by index.
