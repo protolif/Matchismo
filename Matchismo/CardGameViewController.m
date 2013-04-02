@@ -18,19 +18,19 @@
   // Private properties go here.
   @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
   @property (nonatomic) int flipCount;
-  @property (strong, nonatomic) PlayingCardDeck *deck;
+  @property (strong, nonatomic) Deck *deck;
   @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @end
 
 @implementation CardGameViewController
 
   - (IBAction)flipCard:(UIButton *)sender {
-    if (!sender.selected) { // AKA face down
-      // Draw a new card
-      Card *card = [self.deck drawRandomCard];
-      // Set the button's contents, for the selected state.
-      [sender setTitle:card.contents forState:UIControlStateSelected];
-    }
+    //  if (!sender.selected) { // AKA face down
+    //    // Draw a new card
+    //    Card *card = [self.deck drawRandomCard];
+    //    // Set the button's contents, for the selected state.
+    //    [sender setTitle:card.contents forState:UIControlStateSelected];
+    //  }
     // Flip the card over
     sender.selected = !sender.isSelected;
     self.flipCount++;
@@ -41,7 +41,7 @@
     self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
   }
 
-  - (PlayingCardDeck *)deck {
+  - (Deck *)deck {
     // Lazily instantiating a PlayingCardDeck
     if (!_deck) _deck = [[PlayingCardDeck alloc] init];
     return _deck;
