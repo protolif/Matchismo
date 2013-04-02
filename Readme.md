@@ -1,9 +1,7 @@
-# Matchismo
-## A CS193 project
-### by James Dunn
+## Matchismo: A CS193P project
 
 This is a card matching memory game for the iPhone. It is the first project
-in my CS193P class on iOS programming in Objective-C.
+in a class I'm taking, on iOS programming in Objective-C.
 
 I'm making this game by following along with the lecture videos and slides,
 as well as completing the homework assignments.
@@ -15,8 +13,7 @@ I should note, that my only motivation for plugging this link, is my gratitude t
 Stanford University, and Professor Paul Hegarty, for making this material free to all.
 I sincerely hope it helps other aspiring app developers.
 
-
-Cheers,
-James Dunn
+Cheers,  
+**James Dunn**
 
 [1]: http://itun.es/us/ql6wJ
