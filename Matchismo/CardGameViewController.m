@@ -18,6 +18,7 @@
 @interface CardGameViewController ()
   // Private properties go here.
   @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
+  @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
   @property (nonatomic) int flipCount;
   @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
   @property (strong, nonatomic) CardMatchingGame *game;
@@ -53,6 +54,8 @@
       // Make the card translucent if it's unplayable.
       cardButton.alpha = card.isUnplayable ? 0.3 : 1.0;
     }
+    // Update the score.
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
   }
 
   - (CardMatchingGame *)game {
