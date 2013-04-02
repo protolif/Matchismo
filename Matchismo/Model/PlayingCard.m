@@ -10,6 +10,23 @@
 
 @implementation PlayingCard
 
+  - (int)match:(NSArray *)otherCards {
+    int score = 0;
+    
+    // Ensures there is only 1 card to match
+    if (otherCards.count == 1) {
+      PlayingCard *otherCard = [otherCards lastObject];// safe from nil
+      // Check for suit and rank matches.
+      if ([otherCard.suit isEqualToString:self.suit]) {
+        score = 1;
+      } else if (otherCard.rank == self.rank) {
+        score = 4;// rank matches are more rare
+      }
+    }
+    
+    return score;
+  }
+
   - (NSString *)contents {// returns suit + rank
     return [[PlayingCard rankStrings][self.rank] stringByAppendingString:self.suit];
   }
