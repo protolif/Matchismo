@@ -50,6 +50,8 @@
       cardButton.selected = card.isFaceUp;
       // Make the card untappable if it isUnplayable
       cardButton.enabled = !card.isUnplayable;
+      // Make the card translucent if it's unplayable.
+      cardButton.alpha = card.isUnplayable ? 0.3 : 1.0;
     }
   }
 
