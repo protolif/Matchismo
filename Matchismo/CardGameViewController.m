@@ -19,6 +19,7 @@
   // Private properties go here.
   @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
   @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+  @property (weak, nonatomic) IBOutlet UISwitch *easyModeEnabled;
   @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
   @property (strong, nonatomic) CardMatchingGame *game;
 @end

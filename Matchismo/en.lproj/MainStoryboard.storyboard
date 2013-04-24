@@ -329,6 +329,7 @@
                         <color key="backgroundColor" red="0.4136969586150071" green="0.61866230867346939" blue="0.41698923686446671" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="easyModeEnabled" destination="uXN-39-SqR" id="7K9-E2-nyW"/>
                         <outlet property="scoreLabel" destination="cpf-wz-p0l" id="36A-xk-I91"/>
                         <outlet property="statusLabel" destination="hOU-HJ-owG" id="uJN-Vc-MUO"/>
                         <outletCollection property="cardButtons" destination="Idl-uM-XZn" id="4KI-Te-WoJ"/>
@@ -358,6 +359,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CardGameViewController.h"/>
             <relationships>
                 <relationship kind="action" name="flipCard:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="easyModeEnabled" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
                 <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>
