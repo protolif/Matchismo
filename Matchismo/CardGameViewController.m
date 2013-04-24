@@ -19,12 +19,15 @@
   // Private properties go here.
   @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
   @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
-  @property (weak, nonatomic) IBOutlet UISwitch *easyModeSwitch;
   @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
   @property (strong, nonatomic) CardMatchingGame *game;
 @end
 
 @implementation CardGameViewController
+
+  - (IBAction)toggleEasyMode:(UISwitch *)sender {
+    self.game.easyModeEnabled = sender.on;
+  }
 
   - (IBAction)flipCard:(UIButton *)sender {
     // Ask the cardButtons array what the sender's index is,

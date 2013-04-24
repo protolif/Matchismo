@@ -10,4 +10,5 @@
 
 @interface CardGameViewController : UIViewController
   - (IBAction)flipCard:(UIButton *)sender;
+  - (IBAction)toggleEasyMode:(UISwitch *)sender;
 @end
