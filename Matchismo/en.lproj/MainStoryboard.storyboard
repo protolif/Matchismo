@@ -235,7 +235,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.4136969586150071" green="0.61866230867346939" blue="0.41698923686446671" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="flipsLabel" destination="5Y4-BN-3XS" id="H7O-dE-z9c"/>
