@@ -17,10 +17,8 @@
 
 @interface CardGameViewController ()
   // Private properties go here.
-  @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
   @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
   @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
-  @property (nonatomic) int flipCount;
   @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
   @property (strong, nonatomic) CardMatchingGame *game;
 @end
@@ -31,13 +29,7 @@
     // Ask the cardButtons array what the sender's index is,
     // then tell the game to flip that card, by its index.
     [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
-    self.flipCount++;
     [self updateUI];
-  }
-
-  - (void)setFlipCount:(int)flipCount {
-    _flipCount = flipCount;
-    self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
   }
 
   - (void)updateUI {
