@@ -21,4 +21,6 @@
   - (Card *)cardAtIndex:(NSUInteger)index;
   // Your current score
   @property (nonatomic, readonly) int score;
+  // Info to help the user
+  @property (strong, nonatomic) NSString * status;
 @end

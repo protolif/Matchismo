@@ -57,6 +57,8 @@
     }
     // Update the score.
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+    // Update the status.
+    self.statusLabel.text = self.game.status;
   }
 
   - (CardMatchingGame *)game {
