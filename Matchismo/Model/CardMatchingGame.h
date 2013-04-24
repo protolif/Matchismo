@@ -21,6 +21,8 @@
   - (Card *)cardAtIndex:(NSUInteger)index;
   // Your current score
   @property (nonatomic, readonly) int score;
+  // The difficulty setting
+  @property (nonatomic) BOOL easyModeEnabled;
   // Info to help the user
   @property (strong, nonatomic) NSString * status;
 @end

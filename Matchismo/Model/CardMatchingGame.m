@@ -44,6 +44,8 @@
           self.cards[i] = card;// Store the card in cards property.
         }
       }
+      // Enable Easy Mode
+      self.easyModeEnabled = YES;
     }
     
     return self;
@@ -57,6 +59,7 @@
   #define FLIP_COST 1
   #define MISMATCH_PENALTY 2
   #define MATCH_BONUS 4
+  #define EASY_MODE_BONUS 2
 
   - (void)flipCardAtIndex:(NSUInteger)index {
     // Fetch the card by its index.
@@ -76,6 +79,10 @@
               card.unplayable = YES;
               // Add points to the score.
               int gained = matchScore * MATCH_BONUS;
+              // Apply the easy mode bonus when appropriate
+              if (self.easyModeEnabled == YES) {
+                gained *= EASY_MODE_BONUS;
+              }
               self.score += gained;
               self.status = [NSString stringWithFormat:@"Yes, the cards match. +%d points", gained];
             } else {
