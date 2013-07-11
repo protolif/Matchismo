@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C0C3EE21786A5C00092C462 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C0C3EE11786A5C00092C462 /* iPhone.storyboard */; };
 		7C1495F4170B16AE0035EFB2 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 7C1495F3170B16AE0035EFB2 /* Readme.md */; };
 		7C1495F7170B59C30035EFB2 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1495F6170B59C30035EFB2 /* CardMatchingGame.m */; };
 		7C42EB1D17073FD8007ECB92 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C42EB1C17073FD8007ECB92 /* PlayingCardDeck.m */; };
-		7C67742F1727EF5E00755356 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C67742E1727EF5E00755356 /* iPad.storyboard */; };
 		7CA056E8170065E1003A209D /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA056E7170065E1003A209D /* Card.m */; };
 		7CB3A06B1702EC35004BBD8A /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3A06A1702EC35004BBD8A /* Deck.m */; };
 		7CB3A06F1703172E004BBD8A /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3A06E1703172E004BBD8A /* PlayingCard.m */; };
@@ -23,17 +23,17 @@
 		7CC39B9216FDB9980095C39F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC39B9116FDB9980095C39F /* Default.png */; };
 		7CC39B9416FDB9980095C39F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC39B9316FDB9980095C39F /* Default@2x.png */; };
 		7CC39B9616FDB9980095C39F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC39B9516FDB9980095C39F /* Default-568h@2x.png */; };
-		7CC39B9916FDB9980095C39F /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC39B9716FDB9980095C39F /* iPhone.storyboard */; };
 		7CC39B9C16FDB9980095C39F /* CardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC39B9B16FDB9980095C39F /* CardGameViewController.m */; };
+		7CE8E36F178EEC4C005083C2 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8E36E178EEC4C005083C2 /* iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C0C3EE11786A5C00092C462 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhone.storyboard; path = View/iPhone.storyboard; sourceTree = "<group>"; };
 		7C1495F3170B16AE0035EFB2 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = SOURCE_ROOT; };
 		7C1495F5170B59C30035EFB2 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
 		7C1495F6170B59C30035EFB2 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
 		7C42EB1B17073FD8007ECB92 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
 		7C42EB1C17073FD8007ECB92 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
-		7C67742E1727EF5E00755356 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPad.storyboard; path = View/iPad.storyboard; sourceTree = "<group>"; };
 		7CA056E6170065E1003A209D /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
 		7CA056E7170065E1003A209D /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 		7CB3A0691702EC35004BBD8A /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
@@ -53,9 +53,9 @@
 		7CC39B9116FDB9980095C39F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		7CC39B9316FDB9980095C39F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7CC39B9516FDB9980095C39F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		7CC39B9816FDB9980095C39F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
 		7CC39B9A16FDB9980095C39F /* CardGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardGameViewController.h; sourceTree = "<group>"; };
 		7CC39B9B16FDB9980095C39F /* CardGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardGameViewController.m; sourceTree = "<group>"; };
+		7CE8E36E178EEC4C005083C2 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPad.storyboard; path = View/iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +75,8 @@
 		7C67742D1727EED300755356 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7CC39B9716FDB9980095C39F /* iPhone.storyboard */,
-				7C67742E1727EF5E00755356 /* iPad.storyboard */,
+				7CE8E36E178EEC4C005083C2 /* iPad.storyboard */,
+				7C0C3EE11786A5C00092C462 /* iPhone.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -216,11 +216,11 @@
 			files = (
 				7CC39B8A16FDB9980095C39F /* InfoPlist.strings in Resources */,
 				7CC39B9216FDB9980095C39F /* Default.png in Resources */,
+				7CE8E36F178EEC4C005083C2 /* iPad.storyboard in Resources */,
 				7CC39B9416FDB9980095C39F /* Default@2x.png in Resources */,
 				7CC39B9616FDB9980095C39F /* Default-568h@2x.png in Resources */,
-				7CC39B9916FDB9980095C39F /* iPhone.storyboard in Resources */,
 				7C1495F4170B16AE0035EFB2 /* Readme.md in Resources */,
-				7C67742F1727EF5E00755356 /* iPad.storyboard in Resources */,
+				7C0C3EE21786A5C00092C462 /* iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,14 +251,6 @@
 				7CC39B8916FDB9980095C39F /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7CC39B9716FDB9980095C39F /* iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7CC39B9816FDB9980095C39F /* en */,
-			);
-			name = iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -320,7 +312,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -333,7 +325,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
