@@ -11,6 +11,7 @@
 		7C1495F4170B16AE0035EFB2 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 7C1495F3170B16AE0035EFB2 /* Readme.md */; };
 		7C1495F7170B59C30035EFB2 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1495F6170B59C30035EFB2 /* CardMatchingGame.m */; };
 		7C204824178F400900889E8F /* StarBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C204823178F400900889E8F /* StarBall.png */; };
+		7C204826178F452800889E8F /* BlankCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C204825178F452800889E8F /* BlankCard.png */; };
 		7C42EB1D17073FD8007ECB92 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C42EB1C17073FD8007ECB92 /* PlayingCardDeck.m */; };
 		7CA056E8170065E1003A209D /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA056E7170065E1003A209D /* Card.m */; };
 		7CB3A06B1702EC35004BBD8A /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3A06A1702EC35004BBD8A /* Deck.m */; };
@@ -36,6 +37,7 @@
 		7C1495F5170B59C30035EFB2 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
 		7C1495F6170B59C30035EFB2 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
 		7C204823178F400900889E8F /* StarBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarBall.png; sourceTree = "<group>"; };
+		7C204825178F452800889E8F /* BlankCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlankCard.png; sourceTree = "<group>"; };
 		7C42EB1B17073FD8007ECB92 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
 		7C42EB1C17073FD8007ECB92 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 		7CA056E6170065E1003A209D /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		7CC39B8616FDB9980095C39F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7C204825178F452800889E8F /* BlankCard.png */,
 				7C204823178F400900889E8F /* StarBall.png */,
 				7CE8E379178F073A005083C2 /* Spade.png */,
 				7CC39B8E16FDB9980095C39F /* CardGameAppDelegate.h */,
@@ -232,6 +235,7 @@
 			files = (
 				7CC39B8A16FDB9980095C39F /* InfoPlist.strings in Resources */,
 				7CE8E37A178F073A005083C2 /* Spade.png in Resources */,
+				7C204826178F452800889E8F /* BlankCard.png in Resources */,
 				7CC39B9216FDB9980095C39F /* Default.png in Resources */,
 				7C204824178F400900889E8F /* StarBall.png in Resources */,
 				7CE8E36F178EEC4C005083C2 /* iPad.storyboard in Resources */,
